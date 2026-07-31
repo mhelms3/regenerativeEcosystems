@@ -561,7 +561,7 @@ h3 { color: var(--navy); }
 /* Ecosystem service-line drill-downs */
 .operations-section { background: #0d3150; color: white; }
 .operations-section .section-heading p { color: #c3d2df; }
-.service-selector { display: grid; grid-template-columns: repeat(3, 1fr); gap: 14px; margin-bottom: 18px; }
+.service-selector { display: grid; grid-template-columns: repeat(4, 1fr); gap: 14px; margin-bottom: 18px; }
 .service-select { padding: 24px; text-align: left; color: white; background: #174362; border: 1px solid #456983; border-radius: 18px; cursor: pointer; }
 .service-select small,.service-select strong,.service-select span { display: block; }
 .service-select small { font-size: .7rem; letter-spacing: .12em; text-transform: uppercase; opacity: .72; }
@@ -569,6 +569,18 @@ h3 { color: var(--navy); }
 .service-select span { font-size: .85rem; opacity: .8; }
 .service-select.active { color: #102d47; background: #d8ebce; border-color: #d8ebce; }
 .service-detail { padding: clamp(24px,4vw,50px); color: var(--ink); background: #f8faf7; border-radius: 24px; }
+.system-finance { margin: 0 0 34px; padding: clamp(22px,3vw,34px); background: #eef3ee; border: 1px solid #d7e2d7; border-radius: 22px; }
+.system-finance-head { display: grid; grid-template-columns: minmax(0,1.2fr) minmax(260px,.8fr); gap: 28px; align-items: end; margin-bottom: 20px; }
+.system-finance-head h3 { margin: 6px 0 0; color: var(--navy); font-size: clamp(1.45rem,2.5vw,2.15rem); }
+.system-finance-head p { margin: 0; color: var(--muted); font-size: .86rem; line-height: 1.6; }
+.finance-table-wrap { overflow-x: auto; border: 1px solid var(--line); border-radius: 14px; background: white; }
+.finance-summary-table { width: 100%; min-width: 900px; border-collapse: collapse; font-variant-numeric: tabular-nums; }
+.finance-summary-table th,.finance-summary-table td { padding: 13px 14px; border-bottom: 1px solid #e5e9eb; text-align: right; white-space: nowrap; font-size: .78rem; }
+.finance-summary-table th:first-child,.finance-summary-table td:first-child { text-align: left; }
+.finance-summary-table thead th { color: #fff; background: var(--navy); font-size: .7rem; letter-spacing: .02em; white-space: normal; }
+.finance-summary-table tbody th { color: var(--navy); font-weight: 700; }
+.finance-summary-table tfoot th,.finance-summary-table tfoot td { color: var(--navy); background: #e3ebe4; border-bottom: 0; font-weight: 800; }
+.positive { color: #176b45 !important; }
 .service-detail[hidden] { display: none; }
 .service-detail-head { display: flex; justify-content: space-between; gap: 24px; align-items: flex-start; }
 .service-detail-head h3 { margin: 6px 0 8px; color: var(--navy); font-size: clamp(2rem,4vw,3.35rem); line-height: 1.05; }
@@ -594,11 +606,14 @@ h3 { color: var(--navy); }
 .capital-callout { display: grid; grid-template-columns: repeat(3,1fr); gap: 7px; margin-top: 15px; }
 .capital-callout span { padding: 11px; font-size: .65rem; background: #f0f3f5; }
 .capital-callout b { display: block; margin-top: 4px; font-size: .9rem; }
+.finance-note { margin: 14px 0 0; color: var(--muted); font-size: .76rem; line-height: 1.55; }
 .negative { color: #a6412c !important; }
 .recovery-card { background: #e9f4ec; }
 .recovery-value { display: flex; align-items: baseline; gap: 10px; }
 .recovery-value b { color: var(--green); font-size: 3.3rem; line-height: 1; }
 .recovery-card p { color: #466158; font-size: .82rem; }
+.resource-chips { display: flex; flex-wrap: wrap; gap: 7px; margin-top: 13px; }
+.resource-chips span { padding: 7px 9px; color: #38594b; background: rgba(255,255,255,.7); border-radius: 999px; font-size: .66rem; }
 .county-card { background: #fff7e8; }
 .county-values { display: grid; grid-template-columns: 1fr 1fr; gap: 8px; }
 .county-values p { margin: 0; padding: 12px; background: white; }
@@ -610,5 +625,25 @@ h3 { color: var(--navy); }
 .guardrails { display: flex; flex-wrap: wrap; gap: 8px; align-items: center; margin-top: 14px; }
 .guardrails strong { margin-right: 8px; }
 .guardrails span { padding: 7px 10px; color: #385068; background: #e9eef1; border-radius: 999px; font-size: .68rem; }
-@media (max-width: 760px) { .service-selector,.operation-grid { grid-template-columns: 1fr; } .operation-metrics { grid-template-columns: 1fr 1fr; } .operation-metrics div:nth-child(2) { border-right: 0; } .service-detail-head { display: block; } .planning-badge { display: inline-block; margin-top: 10px; } .capital-callout { grid-template-columns: 1fr; } .support-test { grid-template-columns: 1fr; } }
+.exchange-ledger { margin-top: 16px; padding: 24px; background: #eef4f6; border: 1px solid #d6e1e5; border-radius: 16px; }
+.exchange-head { display: grid; grid-template-columns: minmax(280px,1fr) 190px 220px; gap: 12px; align-items: stretch; }
+.exchange-head h4 { margin: 4px 0 0; color: var(--navy); font-size: 1.25rem; }
+.exchange-total { padding: 13px; background: #fff; border-left: 4px solid var(--green); }
+.exchange-total.outbound { border-left-color: #c1842c; }
+.exchange-total span,.exchange-total b,.exchange-total small { display: block; }
+.exchange-total span { color: var(--muted); font-size: .62rem; letter-spacing: .06em; text-transform: uppercase; }
+.exchange-total b { margin: 4px 0; color: var(--navy); font-size: 1.15rem; }
+.exchange-total small { color: var(--muted); font-size: .67rem; }
+.exchange-columns { display: grid; grid-template-columns: 1fr 1fr; gap: 16px; margin-top: 17px; }
+.exchange-columns>div { padding: 17px; background: white; border-radius: 12px; }
+.exchange-columns h5 { margin: 0 0 8px; color: var(--navy); font-size: .82rem; text-transform: uppercase; letter-spacing: .05em; }
+.exchange-row { display: grid; grid-template-columns: 1fr auto; gap: 12px; padding: 10px 0; border-bottom: 1px solid #e7ecef; }
+.exchange-row:last-child { border-bottom: 0; }
+.exchange-row span { color: var(--ink); font-size: .78rem; }
+.exchange-row small { display: block; margin-top: 3px; color: var(--muted); font-size: .68rem; }
+.exchange-row b { color: var(--navy); font-size: .78rem; text-align: right; }
+.exchange-empty,.accounting-note { color: var(--muted); font-size: .75rem; line-height: 1.55; }
+.accounting-note { margin: 15px 0 0; padding-top: 13px; border-top: 1px solid #d4dfe3; }
+@media (max-width: 1050px) { .service-selector { grid-template-columns: 1fr 1fr; } }
+@media (max-width: 760px) { .service-selector,.operation-grid,.exchange-columns,.exchange-head,.system-finance-head { grid-template-columns: 1fr; } .operation-metrics { grid-template-columns: 1fr 1fr; } .operation-metrics div:nth-child(2) { border-right: 0; } .service-detail-head { display: block; } .planning-badge { display: inline-block; margin-top: 10px; } .capital-callout { grid-template-columns: 1fr; } .support-test { grid-template-columns: 1fr; } }
 @media (max-width: 480px) { .operation-metrics,.county-values { grid-template-columns: 1fr; } .operation-metrics div { border-right: 0; border-bottom: 1px solid var(--line); } .cascade-list p { grid-template-columns: 90px 1fr; } }
