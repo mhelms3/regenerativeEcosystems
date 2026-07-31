@@ -404,3 +404,17 @@ nav.querySelectorAll('a').forEach(link => link.addEventListener('click', () => {
   nav.classList.remove('open');
   navToggle.setAttribute('aria-expanded', 'false');
 }));
+
+document.querySelectorAll('[data-service-line]').forEach(button => {
+  button.addEventListener('click', () => {
+    const selected = button.dataset.serviceLine;
+    document.querySelectorAll('[data-service-line]').forEach(item => {
+      const active = item === button;
+      item.classList.toggle('active', active);
+      item.setAttribute('aria-pressed', String(active));
+    });
+    document.querySelectorAll('[data-service-panel]').forEach(panel => {
+      panel.hidden = panel.dataset.servicePanel !== selected;
+    });
+  });
+});
