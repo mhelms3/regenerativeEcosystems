@@ -11,7 +11,8 @@ Files:
 
 This is a self-contained static website. It uses no external libraries, fonts, trackers, or network requests.
 
-The Woody Biomass section includes interactive drill-downs for Import &
-Separation and Kiln Drying & Products, including material flows, economics,
-capital burden, data-center recovery value, DeKalb County value, safeguards,
-and municipal support tests.
+The Ecosystem Operations section includes interactive drill-downs for Woody
+Biomass Import & Separation, Kiln Drying & Products, and Mushroom Block
+Production & Grower Support. Each presents material flows, economics, capital
+burden, data-center recovery value, DeKalb County value, safeguards, and a
+municipal support test using consistent accounting boundaries.
