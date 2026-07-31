@@ -1,0 +1,495 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Interactive investor and municipality framework for Regenerative Ecosystems for Data Centers.">
+  <title>Regenerative Ecosystems for Data Centers — Investor & Municipality Framework</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to main content</a>
+
+  <header class="site-header">
+    <div class="container header-inner">
+      <a class="brand" href="#overview" aria-label="Regenerative Ecosystems for Data Centers home">
+        <span class="brand-mark" aria-hidden="true">
+          <svg viewBox="0 0 48 48" role="img">
+            <path d="M8 34V12h13v22M27 34V7h13v27M4 34h40" fill="none" stroke="currentColor" stroke-width="2.8" stroke-linecap="round"/>
+            <path d="M12 17h5M12 22h5M12 27h5M31 13h5M31 18h5M31 23h5" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round"/>
+            <path d="M18 40c5-1 9-4 12-9 1 5-2 10-7 12-3 1-6 0-8-1 1-1 2-2 3-2Z" fill="currentColor"/>
+          </svg>
+        </span>
+        <span>
+          <strong>Regenerative Ecosystems</strong>
+          <small>for Data Centers</small>
+        </span>
+      </a>
+      <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="primary-nav">
+        <span class="sr-only">Toggle navigation</span>
+        <span></span><span></span><span></span>
+      </button>
+      <nav id="primary-nav" class="primary-nav" aria-label="Primary navigation">
+        <a href="#overview">Overview</a>
+        <a href="#framework">Framework</a>
+        <a href="#scorecard">Scorecard</a>
+        <a href="#roadmap">Roadmap</a>
+        <a href="#evidence">Evidence</a>
+      </nav>
+    </div>
+  </header>
+
+  <main id="main">
+    <section id="overview" class="hero">
+      <div class="container hero-grid">
+        <div class="hero-copy">
+          <div class="eyebrow">Impact Investor / Municipality Framework</div>
+          <h1>Turn data-center infrastructure into measurable regional value.</h1>
+          <p class="lead">Explore how shared heat, water, land, logistics, and capital can support a diversified economic engine, ecological restoration, resilient infrastructure, and visible community benefits.</p>
+          <div class="hero-actions">
+            <a class="button primary" href="#framework">Explore the framework</a>
+            <button class="button secondary" type="button" data-open-image>View original infographic</button>
+          </div>
+          <dl class="hero-principles" aria-label="Program principles">
+            <div><dt>Return</dt><dd>Productive assets and diversified revenue</dd></div>
+            <div><dt>Public value</dt><dd>Jobs, skills, health, and local opportunity</dd></div>
+            <div><dt>Resilience</dt><dd>Restored ecosystems and resource security</dd></div>
+            <div><dt>Accountability</dt><dd>Baselines, targets, owners, and verification</dd></div>
+          </dl>
+        </div>
+
+        <div class="hero-visual" aria-label="Value creation pathway">
+          <svg viewBox="0 0 620 520" role="img" aria-labelledby="hero-svg-title hero-svg-desc">
+            <title id="hero-svg-title">Data center regenerative ecosystem value pathway</title>
+            <desc id="hero-svg-desc">A data center core links to four value areas: economic development, infrastructure efficiency, environmental performance, and community value.</desc>
+            <defs>
+              <filter id="shadow" x="-20%" y="-20%" width="140%" height="140%">
+                <feDropShadow dx="0" dy="8" stdDeviation="12" flood-opacity=".12"/>
+              </filter>
+            </defs>
+            <path class="connector economic" d="M250 205 C190 160 150 135 105 110"/>
+            <path class="connector infrastructure" d="M370 205 C430 160 470 135 515 110"/>
+            <path class="connector environment" d="M250 315 C190 360 150 385 105 410"/>
+            <path class="connector community" d="M370 315 C430 360 470 385 515 410"/>
+
+            <g class="satellite economic" transform="translate(18 40)">
+              <rect width="180" height="118" rx="24"/>
+              <text x="90" y="45" text-anchor="middle">Economic</text>
+              <text x="90" y="72" text-anchor="middle">Development</text>
+              <text class="satellite-sub" x="90" y="96" text-anchor="middle">jobs • products • tax base</text>
+            </g>
+            <g class="satellite infrastructure" transform="translate(422 40)">
+              <rect width="180" height="118" rx="24"/>
+              <text x="90" y="45" text-anchor="middle">Infrastructure</text>
+              <text x="90" y="72" text-anchor="middle">Efficiency</text>
+              <text class="satellite-sub" x="90" y="96" text-anchor="middle">heat • water • logistics</text>
+            </g>
+            <g class="satellite environment" transform="translate(18 362)">
+              <rect width="180" height="118" rx="24"/>
+              <text x="90" y="45" text-anchor="middle">Environmental</text>
+              <text x="90" y="72" text-anchor="middle">Performance</text>
+              <text class="satellite-sub" x="90" y="96" text-anchor="middle">soil • water • habitat</text>
+            </g>
+            <g class="satellite community" transform="translate(422 362)">
+              <rect width="180" height="118" rx="24"/>
+              <text x="90" y="45" text-anchor="middle">Community &</text>
+              <text x="90" y="72" text-anchor="middle">Public Value</text>
+              <text class="satellite-sub" x="90" y="96" text-anchor="middle">skills • health • ownership</text>
+            </g>
+
+            <g class="core" filter="url(#shadow)">
+              <circle cx="310" cy="260" r="112"/>
+              <g class="core-icon" transform="translate(234 175)">
+                <rect x="0" y="38" width="58" height="82" rx="4"/>
+                <rect x="62" y="8" width="76" height="112" rx="4"/>
+                <rect x="142" y="48" width="42" height="72" rx="4"/>
+                <path d="M12 56h34M12 72h34M12 88h34M76 30h48M76 48h48M76 66h48M76 84h48M76 102h48M153 65h20M153 81h20M153 97h20"/>
+                <path class="leaf" d="M34 137c17-15 35-18 51-10-9 17-29 24-51 10ZM145 133c-8-18-4-34 11-47 12 14 11 34-11 47Z"/>
+              </g>
+              <text x="310" y="328" text-anchor="middle">DATA CENTER +</text>
+              <text x="310" y="350" text-anchor="middle">REGENERATIVE ECOSYSTEM</text>
+            </g>
+          </svg>
+        </div>
+      </div>
+    </section>
+
+    <section class="decision-lens-section" aria-labelledby="decision-lens-title">
+      <div class="container">
+        <div class="section-heading compact">
+          <div>
+            <span class="eyebrow">Decision lens</span>
+            <h2 id="decision-lens-title">View the program through different stakeholder priorities.</h2>
+          </div>
+          <p id="lens-summary" aria-live="polite">All four lenses are active. Select a lens to emphasize the most relevant outcomes, metrics, and risks.</p>
+        </div>
+        <div class="lens-controls" role="group" aria-label="Decision lens">
+          <button class="lens-button active" type="button" data-lens="all" aria-pressed="true">All lenses</button>
+          <button class="lens-button" type="button" data-lens="return" aria-pressed="false">Return</button>
+          <button class="lens-button" type="button" data-lens="public" aria-pressed="false">Public value</button>
+          <button class="lens-button" type="button" data-lens="resilience" aria-pressed="false">Resilience</button>
+          <button class="lens-button" type="button" data-lens="accountability" aria-pressed="false">Accountability</button>
+        </div>
+      </div>
+    </section>
+
+    <section id="framework" class="section framework-section" aria-labelledby="framework-title">
+      <div class="container">
+        <div class="section-heading">
+          <div>
+            <span class="eyebrow">Interactive framework</span>
+            <h2 id="framework-title">Four value pillars linked by shared infrastructure.</h2>
+          </div>
+          <p>Select any pillar to drill into its interventions, outcomes, metrics, dependencies, controls, and evidence requirements.</p>
+        </div>
+
+        <div class="framework-map">
+          <svg class="framework-connectors" viewBox="0 0 1200 720" preserveAspectRatio="none" aria-hidden="true">
+            <path d="M600 360 C480 260 390 190 285 165"/>
+            <path d="M600 360 C720 260 810 190 915 165"/>
+            <path d="M600 360 C480 460 390 530 285 555"/>
+            <path d="M600 360 C720 460 810 530 915 555"/>
+          </svg>
+
+          <button class="pillar-card pillar-economic" type="button" data-pillar="economic" data-lenses="return public accountability">
+            <span class="pillar-number">01</span>
+            <span class="pillar-icon" aria-hidden="true">
+              <svg viewBox="0 0 48 48"><path d="M7 39h34M11 35V24h7v11M22 35V17h7v18M33 35V10h7v25M8 17l10-7 8 4 14-9" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/></svg>
+            </span>
+            <span class="pillar-title">Economic Development</span>
+            <span class="pillar-description">New businesses, permanent jobs, local procurement, avoided costs, and a broader tax base.</span>
+            <span class="pillar-tags"><span>Products</span><span>Jobs</span><span>Revenue</span></span>
+            <span class="pillar-action">Explore details <span aria-hidden="true">→</span></span>
+          </button>
+
+          <button class="pillar-card pillar-infrastructure" type="button" data-pillar="infrastructure" data-lenses="return resilience accountability">
+            <span class="pillar-number">02</span>
+            <span class="pillar-icon" aria-hidden="true">
+              <svg viewBox="0 0 48 48"><path d="M14 8v12M22 8v12M18 20c-7 0-10 5-10 10 0 7 5 11 11 11 7 0 11-5 11-11 0-4-2-7-5-9M35 10l5 5-5 5M40 15h-9" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/></svg>
+            </span>
+            <span class="pillar-title">Infrastructure & Resource Efficiency</span>
+            <span class="pillar-description">Waste-heat recovery, water reuse, coordinated logistics, and resilient shared systems.</span>
+            <span class="pillar-tags"><span>Heat</span><span>Water</span><span>Utilities</span></span>
+            <span class="pillar-action">Explore details <span aria-hidden="true">→</span></span>
+          </button>
+
+          <div class="framework-hub" aria-label="Shared infrastructure hub">
+            <div class="hub-ring ring-one"></div>
+            <div class="hub-ring ring-two"></div>
+            <div class="hub-content">
+              <svg viewBox="0 0 80 80" aria-hidden="true">
+                <rect x="12" y="29" width="20" height="35" rx="2"/>
+                <rect x="34" y="14" width="28" height="50" rx="2"/>
+                <rect x="64" y="36" width="10" height="28" rx="2"/>
+                <path d="M17 37h10M17 45h10M17 53h10M40 23h16M40 31h16M40 39h16M40 47h16M40 55h16M67 43h4M67 50h4M67 57h4"/>
+                <path class="hub-leaf" d="M21 72c8-7 15-8 22-4-4 8-13 10-22 4ZM54 71c-4-8-2-15 5-21 5 7 4 15-5 21Z"/>
+              </svg>
+              <strong>Shared Core</strong>
+              <span>Heat • water • power • land • logistics • data</span>
+            </div>
+          </div>
+
+          <button class="pillar-card pillar-environment" type="button" data-pillar="environment" data-lenses="public resilience accountability">
+            <span class="pillar-number">03</span>
+            <span class="pillar-icon" aria-hidden="true">
+              <svg viewBox="0 0 48 48"><path d="M24 41V20M24 26c-8-1-13-7-14-15 9 0 15 5 14 15ZM24 31c8-1 13-7 14-15-9 0-15 5-14 15ZM9 41h30" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/></svg>
+            </span>
+            <span class="pillar-title">Environmental Performance</span>
+            <span class="pillar-description">Forest and wetland restoration, soil regeneration, carbon storage, cooling, and water quality.</span>
+            <span class="pillar-tags"><span>Habitat</span><span>Soil</span><span>Water</span></span>
+            <span class="pillar-action">Explore details <span aria-hidden="true">→</span></span>
+          </button>
+
+          <button class="pillar-card pillar-community" type="button" data-pillar="community" data-lenses="public resilience accountability">
+            <span class="pillar-number">04</span>
+            <span class="pillar-icon" aria-hidden="true">
+              <svg viewBox="0 0 48 48"><path d="M18 22a7 7 0 1 0 0-14 7 7 0 0 0 0 14ZM31 25a6 6 0 1 0 0-12 6 6 0 0 0 0 12ZM5 40c0-9 5-14 13-14s13 5 13 14M27 40c0-7 4-11 10-11s9 4 9 11" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/></svg>
+            </span>
+            <span class="pillar-title">Community & Public Value</span>
+            <span class="pillar-description">Training, school partnerships, food access, health, community benefits, and neighborhood resilience.</span>
+            <span class="pillar-tags"><span>Skills</span><span>Health</span><span>Equity</span></span>
+            <span class="pillar-action">Explore details <span aria-hidden="true">→</span></span>
+          </button>
+        </div>
+      </div>
+    </section>
+
+    <section class="section flow-section" aria-labelledby="flow-title">
+      <div class="container">
+        <div class="section-heading">
+          <div>
+            <span class="eyebrow">Supporting graphic</span>
+            <h2 id="flow-title">From underused resources to verified public outcomes.</h2>
+          </div>
+          <p>The program is not a collection of isolated facilities. Each stage supplies inputs, services, data, or benefits to the next.</p>
+        </div>
+
+        <div class="flow-diagram" role="img" aria-label="Resource-to-outcome pathway">
+          <div class="flow-stage core-stage">
+            <span class="flow-step">1</span>
+            <svg viewBox="0 0 64 64" aria-hidden="true"><rect x="7" y="22" width="20" height="34" rx="2"/><rect x="30" y="8" width="27" height="48" rx="2"/><path d="M12 30h10M12 38h10M12 46h10M36 17h15M36 25h15M36 33h15M36 41h15M36 49h15"/></svg>
+            <h3>Data Center Core</h3>
+            <p>Waste heat, water systems, electrical infrastructure, land relationships, and operational data.</p>
+          </div>
+          <div class="flow-arrow"><span>enables</span><b aria-hidden="true">→</b></div>
+          <div class="flow-stage operations-stage">
+            <span class="flow-step">2</span>
+            <svg viewBox="0 0 64 64" aria-hidden="true"><path d="M14 48c5-17 16-28 34-33M19 51c14-2 25-12 31-29M16 46c-5-8-5-17 0-26 8 3 13 9 14 18M37 27c1-9 6-15 15-18 3 9 1 17-7 23"/></svg>
+            <h3>Regenerative Operations</h3>
+            <p>Wood utilization, greenhouses, mushrooms, compost, biochar, restoration, research, and workforce programs.</p>
+          </div>
+          <div class="flow-arrow"><span>produces</span><b aria-hidden="true">→</b></div>
+          <div class="flow-stage outcome-stage">
+            <span class="flow-step">3</span>
+            <svg viewBox="0 0 64 64" aria-hidden="true"><path d="M20 30a9 9 0 1 0 0-18 9 9 0 0 0 0 18ZM43 31a8 8 0 1 0 0-16 8 8 0 0 0 0 16ZM5 56c0-13 6-21 15-21s15 8 15 21M31 56c0-11 5-18 12-18s13 7 13 18"/></svg>
+            <h3>Measured Outcomes</h3>
+            <p>Jobs, local purchasing, restored acres, water reuse, waste diversion, carbon reduction, health, and resilience.</p>
+          </div>
+        </div>
+
+        <div class="resource-loops" aria-label="Resource loops">
+          <button type="button" data-loop="heat"><span>Heat loop</span><small>data center → kilns / greenhouse / process heat</small></button>
+          <button type="button" data-loop="water"><span>Water loop</span><small>capture → treatment → reuse → stormwater benefits</small></button>
+          <button type="button" data-loop="materials"><span>Materials loop</span><small>urban biomass → products → soil → restoration</small></button>
+          <button type="button" data-loop="value"><span>Value loop</span><small>revenue → jobs / benefits → trust → long-term license</small></button>
+        </div>
+        <div id="loop-detail" class="loop-detail" aria-live="polite">
+          Select a resource loop to see its inputs, users, outcomes, and control points.
+        </div>
+      </div>
+    </section>
+
+    <section id="scorecard" class="section scorecard-section" aria-labelledby="scorecard-title">
+      <div class="container">
+        <div class="section-heading">
+          <div>
+            <span class="eyebrow">Illustrative scorecard</span>
+            <h2 id="scorecard-title">Measure benefits without inventing performance.</h2>
+          </div>
+          <p>Each metric requires a definition, baseline, target, owner, reporting cadence, and verification method before public claims are made.</p>
+        </div>
+
+        <div class="metric-grid">
+          <button class="metric-card" type="button" data-metric="jobs" data-lenses="return public accountability">
+            <span class="metric-icon" aria-hidden="true">👥</span>
+            <strong>Jobs Created</strong>
+            <span>Direct permanent FTEs by occupation, wage, benefits, and local-hire status</span>
+          </button>
+          <button class="metric-card" type="button" data-metric="training" data-lenses="public accountability">
+            <span class="metric-icon" aria-hidden="true">🧰</span>
+            <strong>Apprentices Trained</strong>
+            <span>Paid participants, completions, credentials, placements, and retention</span>
+          </button>
+          <button class="metric-card" type="button" data-metric="procurement" data-lenses="return public accountability">
+            <span class="metric-icon" aria-hidden="true">🛒</span>
+            <strong>Local Procurement</strong>
+            <span>Qualified local and disadvantaged-business spend as dollars and share</span>
+          </button>
+          <button class="metric-card" type="button" data-metric="acres" data-lenses="public resilience accountability">
+            <span class="metric-icon" aria-hidden="true">🌳</span>
+            <strong>Acres Restored</strong>
+            <span>Area plus ecological condition, survival, connectivity, and stewardship</span>
+          </button>
+          <button class="metric-card" type="button" data-metric="water" data-lenses="return resilience accountability">
+            <span class="metric-icon" aria-hidden="true">💧</span>
+            <strong>Water Reused</strong>
+            <span>Metered volume, source, treatment level, end use, and potable offset</span>
+          </button>
+          <button class="metric-card" type="button" data-metric="waste" data-lenses="return resilience accountability">
+            <span class="metric-icon" aria-hidden="true">♻️</span>
+            <strong>Waste Diverted</strong>
+            <span>Accepted clean feedstock, products, residuals, contamination, and fate</span>
+          </button>
+          <button class="metric-card" type="button" data-metric="carbon" data-lenses="return resilience accountability">
+            <span class="metric-icon" aria-hidden="true">CO₂e</span>
+            <strong>CO2e Reduced</strong>
+            <span>Boundary-defined avoided emissions, storage, leakage, and uncertainty</span>
+          </button>
+          <button class="metric-card" type="button" data-metric="leverage" data-lenses="return public accountability">
+            <span class="metric-icon" aria-hidden="true">🏛️</span>
+            <strong>Public-Private Leverage</strong>
+            <span>Private capital mobilized per public or philanthropic dollar</span>
+          </button>
+        </div>
+
+        <div class="measurement-architecture">
+          <div>
+            <span class="measure-step">1</span>
+            <h3>Define</h3>
+            <p>Boundary, unit, inclusion rules, exclusions, and anti-double-counting controls.</p>
+          </div>
+          <div>
+            <span class="measure-step">2</span>
+            <h3>Baseline</h3>
+            <p>Pre-project conditions, reference case, existing trends, and affected populations.</p>
+          </div>
+          <div>
+            <span class="measure-step">3</span>
+            <h3>Target</h3>
+            <p>Time-bound performance threshold approved by the accountable governing body.</p>
+          </div>
+          <div>
+            <span class="measure-step">4</span>
+            <h3>Verify</h3>
+            <p>Metering, records, field surveys, quality controls, independent review, and disclosure.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="roadmap" class="section roadmap-section" aria-labelledby="roadmap-title">
+      <div class="container">
+        <div class="section-heading">
+          <div>
+            <span class="eyebrow">Implementation roadmap</span>
+            <h2 id="roadmap-title">Advance only when each decision gate is satisfied.</h2>
+          </div>
+          <p>The roadmap separates research, pre-feasibility, pilots, commercial deployment, and long-term stewardship.</p>
+        </div>
+
+        <div class="roadmap-tabs" role="tablist" aria-label="Roadmap views">
+          <button id="tab-phases" role="tab" aria-selected="true" aria-controls="panel-phases" type="button">Phases</button>
+          <button id="tab-gates" role="tab" aria-selected="false" aria-controls="panel-gates" type="button">Decision gates</button>
+          <button id="tab-governance" role="tab" aria-selected="false" aria-controls="panel-governance" type="button">Governance</button>
+        </div>
+
+        <div id="panel-phases" class="tab-panel" role="tabpanel" aria-labelledby="tab-phases">
+          <ol class="timeline">
+            <li>
+              <span class="timeline-marker">0</span>
+              <div><strong>Alignment & framing</strong><small>0–30 days</small><p>Confirm objectives, partners, site constraints, community priorities, material flows, and data requests.</p></div>
+            </li>
+            <li>
+              <span class="timeline-marker">1</span>
+              <div><strong>Pre-feasibility</strong><small>31–90 days</small><p>Test resource availability, markets, permits, land, operators, capital needs, and integration dependencies.</p></div>
+            </li>
+            <li>
+              <span class="timeline-marker">2</span>
+              <div><strong>Concept design & agreements</strong><small>3–6 months</small><p>Select site and pilot package; draft heat, water, land, feedstock, community-benefit, and governance terms.</p></div>
+            </li>
+            <li>
+              <span class="timeline-marker">3</span>
+              <div><strong>Instrumented pilot</strong><small>6–18 months</small><p>Build modular demonstrations with metering, quality systems, workforce programs, public reporting, and stop/go criteria.</p></div>
+            </li>
+            <li>
+              <span class="timeline-marker">4</span>
+              <div><strong>Scale & stewardship</strong><small>18+ months</small><p>Deploy bankable operations, restore connected landscapes, verify benefits, and fund long-term maintenance.</p></div>
+            </li>
+          </ol>
+        </div>
+
+        <div id="panel-gates" class="tab-panel" role="tabpanel" aria-labelledby="tab-gates" hidden>
+          <div class="gate-grid">
+            <article><strong>Resource gate</strong><p>Reliable heat, water, feedstock, land, or ecological resource at required quantity and quality.</p></article>
+            <article><strong>Technical gate</strong><p>Process works at expected scale, temperature, throughput, quality, and operating conditions.</p></article>
+            <article><strong>Market gate</strong><p>Qualified internal user or buyer, realistic price, specifications, and logistics.</p></article>
+            <article><strong>Permitting gate</strong><p>Credible approvals path for solid waste, water, air, wetlands, food, fire, and local land use.</p></article>
+            <article><strong>Land gate</strong><p>Long-term site control, access, easements, environmental due diligence, and expansion rights.</p></article>
+            <article><strong>Finance gate</strong><p>Complete capital stack, operating model, contingencies, reserves, and downside case.</p></article>
+            <article><strong>Operator gate</strong><p>Qualified owner/operator with staffing, safety, maintenance, quality, and reporting capacity.</p></article>
+            <article><strong>Community gate</strong><p>Documented priorities, enforceable benefits, burden controls, grievance path, and reporting.</p></article>
+            <article><strong>Environmental gate</strong><p>No unacceptable impacts, contamination pathways, habitat losses, emissions, or water risks.</p></article>
+            <article><strong>Integration gate</strong><p>Interfaces are metered, contracted, resilient to outages, and governed across entities.</p></article>
+          </div>
+        </div>
+
+        <div id="panel-governance" class="tab-panel" role="tabpanel" aria-labelledby="tab-governance" hidden>
+          <div class="governance-map">
+            <article>
+              <span class="governance-label">Land & shared infrastructure</span>
+              <h3>Eco-Infrastructure SPV</h3>
+              <p>Land or ground lease, roads, thermal loop, water systems, utilities, access, metering, and shared-service allocation.</p>
+            </article>
+            <div class="governance-arrow">coordinates</div>
+            <article>
+              <span class="governance-label">Specialized operations</span>
+              <h3>Operating Companies</h3>
+              <p>Wood, greenhouse, mushroom, compost, digestion, biochar, algae, logistics, and restoration operations.</p>
+            </article>
+            <div class="governance-arrow">reports to / partners with</div>
+            <article>
+              <span class="governance-label">Public benefit & evidence</span>
+              <h3>Research / Community Entity</h3>
+              <p>Community council, schools, workforce programs, grants, research, dashboards, verification, and benefit stewardship.</p>
+            </article>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="evidence" class="section evidence-section" aria-labelledby="evidence-title">
+      <div class="container evidence-grid">
+        <div>
+          <span class="eyebrow">Evidence architecture</span>
+          <h2 id="evidence-title">Connect public communication to auditable methods.</h2>
+          <p class="lead-small">The public-facing four-pillar model should sit on top of a more rigorous benefit-accounting stack.</p>
+          <div class="framework-stack">
+            <button type="button" data-evidence="envision"><strong>Envision</strong><span>Infrastructure planning, leadership, resources, natural world, and resilience</span></button>
+            <button type="button" data-evidence="capitals"><strong>Six Capitals</strong><span>Financial, manufactured, intellectual, human, social, and natural capital</span></button>
+            <button type="button" data-evidence="ecosystems"><strong>CICES + SEEA</strong><span>Ecosystem services, extent, condition, and service-flow accounting</span></button>
+            <button type="button" data-evidence="impact"><strong>IRIS+ + Social Value</strong><span>Investor metrics, stakeholder outcomes, distribution, and additionality</span></button>
+          </div>
+        </div>
+        <aside id="evidence-detail" class="evidence-detail" aria-live="polite">
+          <span class="detail-kicker">Integrated approach</span>
+          <h3>One public model, multiple analytical layers</h3>
+          <p>Use the four value pillars for communication. Use specialized frameworks behind them to define boundaries, metrics, dependencies, beneficiaries, and verification.</p>
+          <ul>
+            <li>Avoid counting the same benefit under multiple pillars.</li>
+            <li>Track both positive outcomes and project burdens.</li>
+            <li>Separate outputs, outcomes, and long-term impacts.</li>
+            <li>Assign each metric one accountable owner and one source of record.</li>
+          </ul>
+        </aside>
+      </div>
+    </section>
+
+    <section class="section image-section" aria-labelledby="reference-title">
+      <div class="container reference-grid">
+        <div>
+          <span class="eyebrow">Reference design</span>
+          <h2 id="reference-title">Original investor / municipality infographic</h2>
+          <p>The interactive website expands the original framework without replacing it. The poster remains useful as a one-page executive summary.</p>
+          <button class="button secondary" type="button" data-open-image>Open full infographic</button>
+        </div>
+        <button class="reference-image-button" type="button" data-open-image aria-label="Open the original investor and municipality framework infographic">
+          <img src="assets/investor-municipality-framework.png" alt="Impact Investor and Municipality Framework infographic">
+        </button>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <div><strong>Regenerative Ecosystems for Data Centers</strong><span>Interactive concept framework</span></div>
+      <p>Illustrative planning interface. Project baselines, targets, financial results, and verified impacts have not yet been established.</p>
+    </div>
+  </footer>
+
+  <dialog id="detail-dialog" class="detail-dialog">
+    <div class="dialog-header">
+      <div>
+        <span id="dialog-kicker" class="detail-kicker"></span>
+        <h2 id="dialog-title"></h2>
+      </div>
+      <button class="icon-button" type="button" data-close-dialog aria-label="Close detail panel">×</button>
+    </div>
+    <div id="dialog-content" class="dialog-content"></div>
+  </dialog>
+
+  <dialog id="image-dialog" class="image-dialog">
+    <div class="dialog-header">
+      <div>
+        <span class="detail-kicker">Reference infographic</span>
+        <h2>Impact Investor / Municipality Framework</h2>
+      </div>
+      <button class="icon-button" type="button" data-close-image aria-label="Close infographic">×</button>
+    </div>
+    <div class="image-dialog-content">
+      <img src="assets/investor-municipality-framework.png" alt="Full Impact Investor and Municipality Framework infographic">
+    </div>
+  </dialog>
+
+  <script src="app.js"></script>
+</body>
+</html>
